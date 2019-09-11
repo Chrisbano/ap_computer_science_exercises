@@ -10,14 +10,14 @@ public class TownDump {
         System.out.println("How many pounds of trash will you be depositing:");
         trashinpounds = scan.nextInt();
 
-        if (trashPounds < 200) {
-            trashCharge = trashinpounds / 10;
+        if (trashinpounds < 200) {
+            trashcharge = trashinpounds / 10;
         }
         else {
-            trashCharge = 20 + ((trashinpounds - 200) / 12.5);
+            trashcharge = 20 + ((trashinpounds - 200) / 12.5);
         }
 
-        System.out.println("You Owe: $" + trashCharge);
+        System.out.println("You Owe: $" + trashcharge);
 
     }
 }
