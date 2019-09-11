@@ -10,7 +10,7 @@ public class Charge {
         System.out.println("How much money do you have in checkings:");
         checking = scan.nextDouble();
         System.out.println("How much money do you have in savings:");
-        savingAcc = scan.nextDouble();
+        saving = scan.nextDouble();
 
         if (checking > 1000 || saving > 1500) {
             System.out.println("There is no service charge");
