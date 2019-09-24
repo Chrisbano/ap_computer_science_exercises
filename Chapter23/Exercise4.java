@@ -17,11 +17,13 @@ public class Exercise4
 
         while(term > 1.0E-12)
         {
-            term *= x/n;
+            term *= x/n++;
+            // n++ is a post incrament
             sum += term;
-            n++;
+            // \t is a tab
             System.out.println("n:" + n +  "\tterm: " + term + "\tsum: " + sum);
-        }            
+        }  
+                  
         System.out.println("My   e^x: " + sum);
         System.out.println("Real e^x: " + Math.exp(x));
     }
