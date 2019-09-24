@@ -22,7 +22,7 @@ public class Exercise4
             sum += term;
             // \t is a tab
             System.out.println("n:" + n +  "\tterm: " + term + "\tsum: " + sum);
-        }  
+        }   
                   
         System.out.println("My   e^x: " + sum);
         System.out.println("Real e^x: " + Math.exp(x));
