@@ -17,7 +17,7 @@ public class PasswordCracker
         password = scan.nextLine();
 
 
-        String characters = "abcdefghijklmnopqrstuvwxyz ";
+        String characters = "abcdefghijklmnopqrstuvwxyz";
         guesspassword = "";
         int guesses = 0;
         int i = 0;
@@ -27,11 +27,9 @@ public class PasswordCracker
     
 
             guesspassword = ""; 
-            for (i = 0; i <= 5; i++)
+            for (i = 0; i < rand.nextInt(5) + 1; i++)
             {
                 guesspassword += characters.charAt(rand.nextInt(characters.length()));
-                
-            
                 
             }
 
